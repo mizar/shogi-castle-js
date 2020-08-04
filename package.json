@@ -6,6 +6,7 @@
     "denryusen": "ts-node src/denryusen.ts",
     "floodgate": "ts-node src/floodgate.ts",
     "load": "ts-node src/load.ts",
+    "load_simp": "ts-node src/load_simp.ts",
     "dev": "ts-node src/index.ts",
     "dev:watch": "ts-node-dev --respawn src/index.ts",
     "clean": "rimraf dist/*",
