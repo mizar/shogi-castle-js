@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import jsyaml from 'js-yaml';
 import { JKFPlayer } from 'json-kifu-format';
 import { getTags } from './castle';
 
@@ -34,7 +35,7 @@ fetch('https://golan.sakura.ne.jp/denryusen/dr1_test3/kifulist.txt')
     gameObj,
     { tags: getTags(JKFPlayer.parseCSA(await (await fetch(gameObj.gameUrl)).text())) },
   ))).then(values => {
-    console.log(JSON.stringify(values, undefined, 2));
+    console.log(jsyaml.dump(values, { noRefs: true }));
   });
 
 });

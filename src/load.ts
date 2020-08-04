@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
-import { JKFPlayer } from 'json-kifu-format';
+import jsyaml from 'js-yaml';
 import * as iconv from 'iconv-lite';
+import { JKFPlayer } from 'json-kifu-format';
 import { getTags } from './castle';
 import { isUtf8, isSjis } from './detect_encode';
 
@@ -17,9 +18,11 @@ fetch(url)
   throw '';
 })
 .then(kifu => {
-  console.log(JSON.stringify({
+  console.log(jsyaml.dump({
     url,
     kifu,
     tags: getTags(JKFPlayer.parse(kifu)),
-  }, undefined, 2))
+  }, {
+    noRefs: true,
+  }));
 });

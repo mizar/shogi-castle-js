@@ -303,7 +303,7 @@ export const getTags = (player: JKFPlayer) => player.kifu.moves.reduce<{
       c.tags_disable?.forEach((t) => {
         p.filter((te) => te.id === t).forEach((te) => { te.hide = true; });
       });
-      p.push(Object.assign(
+      const tag = Object.assign(
         {},
         c,
         {
@@ -312,7 +312,13 @@ export const getTags = (player: JKFPlayer) => player.kifu.moves.reduce<{
             || (c.tags_exclude?.some((te) => p.some(_te => _te.id === te)))
             || undefined,
         },
-      ));
+      );
+      for (const [key, value] of Object.entries(tag)) {
+        if (value === null || value === undefined) {
+          delete (tag as any)[key];
+        }
+      }
+      p.push(tag);
     }
   });
   v.comments?.forEach((comment) => {
