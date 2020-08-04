@@ -19,6 +19,7 @@ fetch(url)
 .then(kifu => {
   console.log(
     getTags(JKFPlayer.parse(kifu))
+    .filter(tag => !tag.hide)
     .map(tag =>
       `${tag.name.ja_JP}:${tag.tesuu}`
     ).join(',')
