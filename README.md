@@ -2,7 +2,6 @@
 
 - require
   - Node.js
-  - Yarn
 
 ## Install "Yarn" package manager (if needed)
 
@@ -12,8 +11,16 @@ npm install -g yarn
 
 ## Setup shogi-castle-js
 
+- with Yarn
+
 ```
 yarn install
+```
+
+- or, without Yarn (not recommended)
+
+```
+npm install
 ```
 
 ## Usage: load url
