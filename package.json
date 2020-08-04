@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
-    "denryu": "ts-node src/denryu.ts",
+    "denryusen": "ts-node src/denryusen.ts",
     "floodgate": "ts-node src/floodgate.ts",
     "load": "ts-node src/load.ts",
     "dev": "ts-node src/index.ts",
