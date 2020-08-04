@@ -10,8 +10,9 @@
     "dev": "ts-node src/index.ts",
     "dev:watch": "ts-node-dev --respawn src/index.ts",
     "clean": "rimraf dist/*",
+    "data": "ts-node src/build_data.ts",
     "tsc": "tsc",
-    "build": "npm-run-all clean tsc",
+    "build": "npm-run-all clean tsc data",
     "start": "node ."
   },
   "license": "MIT",

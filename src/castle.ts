@@ -113,7 +113,7 @@ const sq_readable = (sq: string): string => `${
   } as { [ rank: string ]: string })[sq.substring(1, 2)]
 }`;
 
-const castle = (jsyaml.safeLoad(fs.readFileSync('data/castle.yaml', 'utf8')) as {
+export const castle = (jsyaml.safeLoad(fs.readFileSync('data/castle.yaml', 'utf8')) as {
   id: string, // タグ管理名
   name: {
     ja_JP: string, // 日本語名
@@ -227,7 +227,8 @@ const castle = (jsyaml.safeLoad(fs.readFileSync('data/castle.yaml', 'utf8')) as 
     });
   }
   return r;
-}, []).map(e => Object.assign({}, e, {
+}, [])
+.map(e => Object.assign({}, e, {
   pieces_readable: e.pieces?.map(p => {
     const _m = p.match(/^(\+?[_PLNSGBRKplnsgbrk])\*([1-9][a-i])$/);
     return _m ? `${turn_readable(_m[1])}${sq_readable(_m[2])}${piece_readable(_m[1])}` : '';
@@ -245,7 +246,16 @@ const castle = (jsyaml.safeLoad(fs.readFileSync('data/castle.yaml', 'utf8')) as 
     return _m ? `${turn_readable(_m[1])}${sq_readable(_m[2])}${piece_readable(_m[1])}→${turn_readable(_m[1])}${sq_readable(_m[3])}${piece_readable(`${_m[4]}${_m[1]}`)}` : '';
   }),
   capture_readable: e.capture?.map(p => `${turn_readable(p)}${piece_readable(p)}`),
-}));
+}))
+.map(e => {
+  const _e = Object.assign({}, e);
+  for (const [key, value] of Object.entries(_e)) {
+    if (value === null || value === undefined) {
+      delete (_e as any)[key];
+    }
+  }
+  return _e;
+});
 
 export const getTags = (player: JKFPlayer) => player.kifu.moves.reduce<{
   id: string,

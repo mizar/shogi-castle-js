@@ -1,0 +1,3067 @@
+[
+  {
+    "id": "HIRATE",
+    "name": {
+      "ja_JP": "平手",
+      "en_US": "HIRATE"
+    },
+    "pieces": [
+      "K*5i",
+      "G*6i",
+      "G*4i",
+      "S*7i",
+      "S*3i",
+      "N*8i",
+      "N*2i",
+      "L*9i",
+      "L*1i",
+      "B*8h",
+      "R*2h",
+      "P*5g",
+      "P*6g",
+      "P*4g",
+      "P*7g",
+      "P*3g",
+      "P*8g",
+      "P*2g",
+      "P*9g",
+      "P*1g",
+      "k*5a",
+      "g*4a",
+      "g*6a",
+      "s*3a",
+      "s*7a",
+      "n*2a",
+      "n*8a",
+      "l*1a",
+      "l*9a",
+      "b*2b",
+      "r*8b",
+      "p*5c",
+      "p*4c",
+      "p*6c",
+      "p*3c",
+      "p*7c",
+      "p*2c",
+      "p*8c",
+      "p*1c",
+      "p*9c"
+    ],
+    "hand_exclude": [
+      "K",
+      "R",
+      "B",
+      "G",
+      "S",
+      "N",
+      "L",
+      "P",
+      "k",
+      "r",
+      "b",
+      "g",
+      "s",
+      "n",
+      "l",
+      "p"
+    ],
+    "tesuu_max": 0,
+    "hide": true,
+    "pieces_readable": [
+      "☗５九玉",
+      "☗６九金",
+      "☗４九金",
+      "☗７九銀",
+      "☗３九銀",
+      "☗８九桂",
+      "☗２九桂",
+      "☗９九香",
+      "☗１九香",
+      "☗８八角",
+      "☗２八飛",
+      "☗５七歩",
+      "☗６七歩",
+      "☗４七歩",
+      "☗７七歩",
+      "☗３七歩",
+      "☗８七歩",
+      "☗２七歩",
+      "☗９七歩",
+      "☗１七歩",
+      "☖５一玉",
+      "☖４一金",
+      "☖６一金",
+      "☖３一銀",
+      "☖７一銀",
+      "☖２一桂",
+      "☖８一桂",
+      "☖１一香",
+      "☖９一香",
+      "☖２二角",
+      "☖８二飛",
+      "☖５三歩",
+      "☖４三歩",
+      "☖６三歩",
+      "☖３三歩",
+      "☖７三歩",
+      "☖２三歩",
+      "☖８三歩",
+      "☖１三歩",
+      "☖９三歩"
+    ],
+    "hand_exclude_readable": [
+      "☗玉",
+      "☗飛",
+      "☗角",
+      "☗金",
+      "☗銀",
+      "☗桂",
+      "☗香",
+      "☗歩",
+      "☖玉",
+      "☖飛",
+      "☖角",
+      "☖金",
+      "☖銀",
+      "☖桂",
+      "☖香",
+      "☖歩"
+    ]
+  },
+  {
+    "id": "KAKUGAWARI",
+    "name": {
+      "ja_JP": "角換わり",
+      "en_US": "KAKUGAWARI"
+    },
+    "hand": [
+      "B",
+      "b"
+    ],
+    "tesuu_max": 20,
+    "hand_readable": [
+      "☗角",
+      "☖角"
+    ]
+  },
+  {
+    "id": "SENTE_HISHASAKI_FUKOUKAN",
+    "name": {
+      "ja_JP": "先手飛車先歩交換",
+      "en_US": "SENTE_HISHASAKI_FUKOUKAN"
+    },
+    "moves": [
+      "R*2h2d"
+    ],
+    "capture": [
+      "p"
+    ],
+    "tesuu_max": 20,
+    "hide": true,
+    "moves_readable": [
+      "☗２八飛→☗２四飛"
+    ],
+    "capture_readable": [
+      "☖歩"
+    ]
+  },
+  {
+    "id": "GOTE_HISHASAKI_FUKOUKAN",
+    "name": {
+      "ja_JP": "後手飛車先歩交換",
+      "en_US": "GOTE_HISHASAKI_FUKOUKAN"
+    },
+    "moves": [
+      "r*8b8f"
+    ],
+    "capture": [
+      "P"
+    ],
+    "tesuu_max": 20,
+    "hide": true,
+    "moves_readable": [
+      "☖８二飛→☖８六飛"
+    ],
+    "capture_readable": [
+      "☗歩"
+    ]
+  },
+  {
+    "id": "SENTE_YOKOFU",
+    "name": {
+      "ja_JP": "先手横歩",
+      "en_US": "SENTE_YOKOFU"
+    },
+    "moves": [
+      "R*2d3d"
+    ],
+    "capture": [
+      "p"
+    ],
+    "tags_disable": [
+      "AIGAKARI"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☗２四飛→☗３四飛"
+    ],
+    "capture_readable": [
+      "☖歩"
+    ]
+  },
+  {
+    "id": "GOTE_YOKOFU",
+    "name": {
+      "ja_JP": "後手横歩",
+      "en_US": "GOTE_YOKOFU"
+    },
+    "moves": [
+      "r*8f7f"
+    ],
+    "capture": [
+      "P"
+    ],
+    "tags_disable": [
+      "AIGAKARI"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☖８六飛→☖７六飛"
+    ],
+    "capture_readable": [
+      "☗歩"
+    ]
+  },
+  {
+    "id": "AIGAKARI",
+    "name": {
+      "ja_JP": "相掛かり",
+      "en_US": "AIGAKARI"
+    },
+    "tags_required": [
+      "SENTE_HISHASAKI_FUKOUKAN",
+      "GOTE_HISHASAKI_FUKOUKAN"
+    ],
+    "tags_exclude": [
+      "SENTE_YOKOFU",
+      "GOTE_YOKOFU"
+    ],
+    "tesuu_max": 64
+  },
+  {
+    "id": "SENTE_MUKAIBISHA",
+    "name": {
+      "ja_JP": "先手向かい飛車",
+      "en_US": "SENTE_MUKAIBISHA"
+    },
+    "moves": [
+      "R*2h8h"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☗２八飛→☗８八飛"
+    ]
+  },
+  {
+    "id": "GOTE_MUKAIBISHA",
+    "name": {
+      "ja_JP": "後手向かい飛車",
+      "en_US": "GOTE_MUKAIBISHA"
+    },
+    "moves": [
+      "r*8b2b"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☖８二飛→☖２二飛"
+    ]
+  },
+  {
+    "id": "SENTE_SANGEN",
+    "name": {
+      "ja_JP": "先手三間飛車",
+      "en_US": "SENTE_SANGEN"
+    },
+    "moves": [
+      "R*2h7h"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☗２八飛→☗７八飛"
+    ]
+  },
+  {
+    "id": "GOTE_SANGEN",
+    "name": {
+      "ja_JP": "後手三間飛車",
+      "en_US": "GOTE_SANGEN"
+    },
+    "moves": [
+      "r*8b3b"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☖８二飛→☖３二飛"
+    ]
+  },
+  {
+    "id": "SENTE_SHIKEN",
+    "name": {
+      "ja_JP": "先手四間飛車",
+      "en_US": "SENTE_SHIKEN"
+    },
+    "moves": [
+      "R*2h6h"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☗２八飛→☗６八飛"
+    ]
+  },
+  {
+    "id": "GOTE_SHIKEN",
+    "name": {
+      "ja_JP": "後手四間飛車",
+      "en_US": "GOTE_SHIKEN"
+    },
+    "moves": [
+      "r*8b4b"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☖８二飛→☖４二飛"
+    ]
+  },
+  {
+    "id": "SENTE_NAKABISHA",
+    "name": {
+      "ja_JP": "先手中飛車",
+      "en_US": "SENTE_NAKABISHA"
+    },
+    "moves": [
+      "R*2h5h"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☗２八飛→☗５八飛"
+    ]
+  },
+  {
+    "id": "GOTE_NAKABISHA",
+    "name": {
+      "ja_JP": "後手中飛車",
+      "en_US": "GOTE_NAKABISHA"
+    },
+    "moves": [
+      "r*8b5b"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☖８二飛→☖５二飛"
+    ]
+  },
+  {
+    "id": "SENTE_MIGISHIKEN",
+    "name": {
+      "ja_JP": "先手右四間飛車",
+      "en_US": "SENTE_MIGISHIKEN"
+    },
+    "moves": [
+      "R*2h4h"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☗２八飛→☗４八飛"
+    ]
+  },
+  {
+    "id": "GOTE_MIGISHIKEN",
+    "name": {
+      "ja_JP": "後手右四間飛車",
+      "en_US": "GOTE_MIGISHIKEN"
+    },
+    "moves": [
+      "r*8b6b"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☖８二飛→☖６二飛"
+    ]
+  },
+  {
+    "id": "SENTE_SODEBISHA",
+    "name": {
+      "ja_JP": "先手袖飛車",
+      "en_US": "SENTE_SODEBISHA"
+    },
+    "moves": [
+      "R*2h3h"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☗２八飛→☗３八飛"
+    ]
+  },
+  {
+    "id": "GOTE_SODEBISHA",
+    "name": {
+      "ja_JP": "後手袖飛車",
+      "en_US": "GOTE_SODEBISHA"
+    },
+    "moves": [
+      "r*8b7b"
+    ],
+    "tesuu_max": 20,
+    "moves_readable": [
+      "☖８二飛→☖７二飛"
+    ]
+  },
+  {
+    "id": "SENTE_HON_MINO",
+    "name": {
+      "ja_JP": "先手本美濃囲い",
+      "en_US": "SENTE_HON_MINO"
+    },
+    "pieces": [
+      "K*2h",
+      "S*3h",
+      "G*4i",
+      "G*5h"
+    ],
+    "tags_disable": [
+      "SENTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八銀",
+      "☗４九金",
+      "☗５八金"
+    ]
+  },
+  {
+    "id": "GOTE_HON_MINO",
+    "name": {
+      "ja_JP": "後手本美濃囲い",
+      "en_US": "GOTE_HON_MINO"
+    },
+    "pieces": [
+      "k*8b",
+      "s*7b",
+      "g*6a",
+      "g*5b"
+    ],
+    "tags_disable": [
+      "GOTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二銀",
+      "☖６一金",
+      "☖５二金"
+    ]
+  },
+  {
+    "id": "SENTE_TAKA_MINO",
+    "name": {
+      "ja_JP": "先手高美濃囲い",
+      "en_US": "SENTE_TAKA_MINO"
+    },
+    "pieces": [
+      "K*2h",
+      "S*3h",
+      "G*4i",
+      "G*4g"
+    ],
+    "tags_disable": [
+      "SENTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八銀",
+      "☗４九金",
+      "☗４七金"
+    ]
+  },
+  {
+    "id": "GOTE_TAKA_MINO",
+    "name": {
+      "ja_JP": "後手高美濃囲い",
+      "en_US": "GOTE_TAKA_MINO"
+    },
+    "pieces": [
+      "k*8b",
+      "s*7b",
+      "g*6a",
+      "g*6c"
+    ],
+    "tags_disable": [
+      "GOTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二銀",
+      "☖６一金",
+      "☖６三金"
+    ]
+  },
+  {
+    "id": "SENTE_GIN_MINO",
+    "name": {
+      "ja_JP": "先手銀美濃囲い",
+      "en_US": "SENTE_GIN_MINO"
+    },
+    "pieces": [
+      "K*2h",
+      "S*3h",
+      "G*4i",
+      "S*5h"
+    ],
+    "tags_disable": [
+      "SENTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八銀",
+      "☗４九金",
+      "☗５八銀"
+    ]
+  },
+  {
+    "id": "GOTE_GIN_MINO",
+    "name": {
+      "ja_JP": "後手銀美濃囲い",
+      "en_US": "GOTE_GIN_MINO"
+    },
+    "pieces": [
+      "k*8b",
+      "s*7b",
+      "g*6a",
+      "s*5b"
+    ],
+    "tags_disable": [
+      "GOTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二銀",
+      "☖６一金",
+      "☖５二銀"
+    ]
+  },
+  {
+    "id": "SENTE_KIN_MINO",
+    "name": {
+      "ja_JP": "先手金美濃囲い",
+      "en_US": "SENTE_KIN_MINO"
+    },
+    "pieces": [
+      "K*2h",
+      "G*3h",
+      "S*4h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八金",
+      "☗４八銀"
+    ]
+  },
+  {
+    "id": "GOTE_KIN_MINO",
+    "name": {
+      "ja_JP": "後手金美濃囲い",
+      "en_US": "GOTE_KIN_MINO"
+    },
+    "pieces": [
+      "k*8b",
+      "g*7b",
+      "s*6b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二金",
+      "☖６二銀"
+    ]
+  },
+  {
+    "id": "SENTE_DIAMOND_MINO",
+    "name": {
+      "ja_JP": "先手ダイアモンド美濃",
+      "en_US": "SENTE_DIAMOND_MINO"
+    },
+    "pieces": [
+      "K*2h",
+      "S*3h",
+      "G*4i",
+      "G*5h",
+      "S*4g"
+    ],
+    "tags_disable": [
+      "SENTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八銀",
+      "☗４九金",
+      "☗５八金",
+      "☗４七銀"
+    ]
+  },
+  {
+    "id": "GOTE_DIAMOND_MINO",
+    "name": {
+      "ja_JP": "後手ダイアモンド美濃",
+      "en_US": "GOTE_DIAMOND_MINO"
+    },
+    "pieces": [
+      "k*8b",
+      "s*7b",
+      "g*6a",
+      "g*5b",
+      "s*6c"
+    ],
+    "tags_disable": [
+      "GOTE_KATA_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二銀",
+      "☖６一金",
+      "☖５二金",
+      "☖６三銀"
+    ]
+  },
+  {
+    "id": "SENTE_KIMURA_MINO",
+    "name": {
+      "ja_JP": "先手木村美濃",
+      "en_US": "SENTE_KIMURA_MINO"
+    },
+    "pieces": [
+      "K*2h",
+      "G*3h",
+      "S*4g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八金",
+      "☗４七銀"
+    ]
+  },
+  {
+    "id": "GOTE_KIMURA_MINO",
+    "name": {
+      "ja_JP": "後手木村美濃",
+      "en_US": "GOTE_KIMURA_MINO"
+    },
+    "pieces": [
+      "k*8b",
+      "g*7b",
+      "s*6c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二金",
+      "☖６三銀"
+    ]
+  },
+  {
+    "id": "SENTE_HIRAME",
+    "name": {
+      "ja_JP": "先手ヒラメ",
+      "en_US": "SENTE_HIRAME"
+    },
+    "pieces": [
+      "K*2h",
+      "S*3h",
+      "G*4i",
+      "G*5i"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八銀",
+      "☗４九金",
+      "☗５九金"
+    ]
+  },
+  {
+    "id": "GOTE_HIRAME",
+    "name": {
+      "ja_JP": "後手ヒラメ",
+      "en_US": "GOTE_HIRAME"
+    },
+    "pieces": [
+      "k*8b",
+      "s*7b",
+      "g*6a",
+      "g*5a"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二銀",
+      "☖６一金",
+      "☖５一金"
+    ]
+  },
+  {
+    "id": "SENTE_KATA_MINO",
+    "name": {
+      "ja_JP": "先手片美濃囲い",
+      "en_US": "SENTE_KATA_MINO"
+    },
+    "pieces": [
+      "K*2h",
+      "S*3h",
+      "G*4i"
+    ],
+    "tags_exclude": [
+      "SENTE_HON_MINO",
+      "SENTE_TAKA_MINO",
+      "SENTE_GIN_MINO",
+      "SENTE_DIAMOND_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗３八銀",
+      "☗４九金"
+    ]
+  },
+  {
+    "id": "GOTE_KATA_MINO",
+    "name": {
+      "ja_JP": "後手片美濃囲い",
+      "en_US": "GOTE_KATA_MINO"
+    },
+    "pieces": [
+      "k*8b",
+      "s*7b",
+      "g*6a"
+    ],
+    "tags_exclude": [
+      "GOTE_HON_MINO",
+      "GOTE_TAKA_MINO",
+      "GOTE_GIN_MINO",
+      "GOTE_DIAMOND_MINO"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖７二銀",
+      "☖６一金"
+    ]
+  },
+  {
+    "id": "SENTE_FURI_GINKAN",
+    "name": {
+      "ja_JP": "先手振り飛車銀冠",
+      "en_US": "SENTE_FURI_GINKAN"
+    },
+    "pieces": [
+      "K*2h",
+      "S*2g",
+      "G*3h",
+      "G*4g"
+    ],
+    "tags_disable": [
+      "SENTE_FURI_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗２七銀",
+      "☗３八金",
+      "☗４七金"
+    ]
+  },
+  {
+    "id": "GOTE_FURI_GINKAN",
+    "name": {
+      "ja_JP": "後手振り飛車銀冠",
+      "en_US": "GOTE_FURI_GINKAN"
+    },
+    "pieces": [
+      "k*8b",
+      "s*8c",
+      "g*7b",
+      "g*6c"
+    ],
+    "tags_disable": [
+      "GOTE_FURI_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖８三銀",
+      "☖７二金",
+      "☖６三金"
+    ]
+  },
+  {
+    "id": "SENTE_FURI_GINKAN",
+    "name": {
+      "ja_JP": "先手振り飛車銀冠",
+      "en_US": "SENTE_FURI_GINKAN"
+    },
+    "pieces": [
+      "G*3h",
+      "S*2g"
+    ],
+    "tags_disable": [
+      "SENTE_FURI_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗３八金",
+      "☗２七銀"
+    ]
+  },
+  {
+    "id": "GOTE_FURI_GINKAN",
+    "name": {
+      "ja_JP": "後手振り飛車銀冠",
+      "en_US": "GOTE_FURI_GINKAN"
+    },
+    "pieces": [
+      "g*7b",
+      "s*8c"
+    ],
+    "tags_disable": [
+      "GOTE_FURI_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖７二金",
+      "☖８三銀"
+    ]
+  },
+  {
+    "id": "SENTE_FURI_KATA_GINKAN",
+    "name": {
+      "ja_JP": "先手振り飛車片銀冠",
+      "en_US": "SENTE_FURI_KATA_GINKAN"
+    },
+    "pieces": [
+      "K*2h",
+      "S*2g",
+      "G*3h"
+    ],
+    "tags_exclude": [
+      "SENTE_FURI_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗２七銀",
+      "☗３八金"
+    ]
+  },
+  {
+    "id": "GOTE_FURI_KATA_GINKAN",
+    "name": {
+      "ja_JP": "後手振り飛車片銀冠",
+      "en_US": "GOTE_FURI_KATA_GINKAN"
+    },
+    "pieces": [
+      "k*8b",
+      "s*8c",
+      "g*7b"
+    ],
+    "tags_exclude": [
+      "GOTE_FURI_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖８三銀",
+      "☖７二金"
+    ]
+  },
+  {
+    "id": "SENTE_FURI_GINKAN_ANAGUMA",
+    "name": {
+      "ja_JP": "先手振り飛車銀冠穴熊",
+      "en_US": "SENTE_FURI_GINKAN_ANAGUMA"
+    },
+    "pieces": [
+      "K*1i",
+      "L*1h",
+      "N*2i",
+      "S*2g",
+      "G*3h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗１九玉",
+      "☗１八香",
+      "☗２九桂",
+      "☗２七銀",
+      "☗３八金"
+    ]
+  },
+  {
+    "id": "GOTE_FURI_GINKAN_ANAGUMA",
+    "name": {
+      "ja_JP": "後手振り飛車銀冠穴熊",
+      "en_US": "GOTE_FURI_GINKAN_ANAGUMA"
+    },
+    "pieces": [
+      "k*9a",
+      "l*9b",
+      "n*8a",
+      "s*8c",
+      "g*7b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖９一玉",
+      "☖９二香",
+      "☖８一桂",
+      "☖８三銀",
+      "☖７二金"
+    ]
+  },
+  {
+    "id": "SENTE_FURI_KATA_GINKAN",
+    "name": {
+      "ja_JP": "先手振り飛車片銀冠",
+      "en_US": "SENTE_FURI_KATA_GINKAN"
+    },
+    "pieces": [
+      "K*2h",
+      "S*2g",
+      "G*3h"
+    ],
+    "tags_exclude": [
+      "SENTE_FURI_GINKAN",
+      "SENTE_FURI_GINKAN_ANAGUMA"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗２八玉",
+      "☗２七銀",
+      "☗３八金"
+    ]
+  },
+  {
+    "id": "GOTE_FURI_KATA_GINKAN",
+    "name": {
+      "ja_JP": "後手振り飛車片銀冠",
+      "en_US": "GOTE_FURI_KATA_GINKAN"
+    },
+    "pieces": [
+      "k*8b",
+      "s*8c",
+      "g*7b"
+    ],
+    "tags_exclude": [
+      "GOTE_FURI_GINKAN",
+      "GOTE_FURI_GINKAN_ANAGUMA"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖８二玉",
+      "☖８三銀",
+      "☖７二金"
+    ]
+  },
+  {
+    "id": "SENTE_FURI_ANAGUMA",
+    "name": {
+      "ja_JP": "先手振り飛車穴熊",
+      "en_US": "SENTE_FURI_ANAGUMA"
+    },
+    "pieces": [
+      "K*1i",
+      "L*1h",
+      "N*2i"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗１九玉",
+      "☗１八香",
+      "☗２九桂"
+    ]
+  },
+  {
+    "id": "GOTE_FURI_ANAGUMA",
+    "name": {
+      "ja_JP": "後手振り飛車穴熊",
+      "en_US": "GOTE_FURI_ANAGUMA"
+    },
+    "pieces": [
+      "k*9a",
+      "l*9b",
+      "n*8a"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖９一玉",
+      "☖９二香",
+      "☖８一桂"
+    ]
+  },
+  {
+    "id": "SENTE_HAYAGAKOI",
+    "name": {
+      "ja_JP": "先手早囲い",
+      "en_US": "SENTE_HAYAGAKOI"
+    },
+    "pieces": [
+      "K*3h",
+      "S*4h",
+      "G*4i"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗３八玉",
+      "☗４八銀",
+      "☗４九金"
+    ]
+  },
+  {
+    "id": "GOTE_HAYAGAKOI",
+    "name": {
+      "ja_JP": "後手早囲い",
+      "en_US": "GOTE_HAYAGAKOI"
+    },
+    "pieces": [
+      "k*7b",
+      "s*6b",
+      "g*6a"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖７二玉",
+      "☖６二銀",
+      "☖６一金"
+    ]
+  },
+  {
+    "id": "SENTE_KINMUSOU",
+    "name": {
+      "ja_JP": "先手金無双",
+      "en_US": "SENTE_KINMUSOU"
+    },
+    "pieces": [
+      "K*3h",
+      "G*5h",
+      "G*4h",
+      "S*2h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗３八玉",
+      "☗５八金",
+      "☗４八金",
+      "☗２八銀"
+    ]
+  },
+  {
+    "id": "GOTE_KINMUSOU",
+    "name": {
+      "ja_JP": "後手金無双",
+      "en_US": "GOTE_KINMUSOU"
+    },
+    "pieces": [
+      "k*7b",
+      "g*5b",
+      "g*6b",
+      "s*8b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖７二玉",
+      "☖５二金",
+      "☖６二金",
+      "☖８二銀"
+    ]
+  },
+  {
+    "id": "SENTE_KINMUSOU",
+    "name": {
+      "ja_JP": "先手金無双",
+      "en_US": "SENTE_KINMUSOU"
+    },
+    "pieces": [
+      "K*3h",
+      "G*5h",
+      "G*4h",
+      "S*3i"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗３八玉",
+      "☗５八金",
+      "☗４八金",
+      "☗３九銀"
+    ]
+  },
+  {
+    "id": "GOTE_KINMUSOU",
+    "name": {
+      "ja_JP": "後手金無双",
+      "en_US": "GOTE_KINMUSOU"
+    },
+    "pieces": [
+      "k*7b",
+      "g*5b",
+      "g*6b",
+      "s*7a"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖７二玉",
+      "☖５二金",
+      "☖６二金",
+      "☖７一銀"
+    ]
+  },
+  {
+    "id": "SENTE_YAGURA",
+    "name": {
+      "ja_JP": "先手矢倉",
+      "en_US": "SENTE_YAGURA"
+    },
+    "pieces": [
+      "G*7h",
+      "S*7g"
+    ],
+    "hand_exclude": [
+      "B"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八金",
+      "☗７七銀"
+    ],
+    "hand_exclude_readable": [
+      "☗角"
+    ]
+  },
+  {
+    "id": "GOTE_YAGURA",
+    "name": {
+      "ja_JP": "後手矢倉",
+      "en_US": "GOTE_YAGURA"
+    },
+    "pieces": [
+      "g*3b",
+      "s*3c"
+    ],
+    "hand_exclude": [
+      "b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二金",
+      "☖３三銀"
+    ],
+    "hand_exclude_readable": [
+      "☖角"
+    ]
+  },
+  {
+    "id": "SENTE_YAGURA",
+    "name": {
+      "ja_JP": "先手矢倉",
+      "en_US": "SENTE_YAGURA"
+    },
+    "pieces": [
+      "K*8h",
+      "G*7h",
+      "S*7g",
+      "G*6g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗７八金",
+      "☗７七銀",
+      "☗６七金"
+    ]
+  },
+  {
+    "id": "GOTE_YAGURA",
+    "name": {
+      "ja_JP": "後手矢倉",
+      "en_US": "GOTE_YAGURA"
+    },
+    "pieces": [
+      "k*2b",
+      "g*3b",
+      "s*3c",
+      "g*4c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖３二金",
+      "☖３三銀",
+      "☖４三金"
+    ]
+  },
+  {
+    "id": "SENTE_KANI",
+    "name": {
+      "ja_JP": "先手カニ囲い",
+      "en_US": "SENTE_KANI"
+    },
+    "pieces": [
+      "K*6i",
+      "G*7h",
+      "S*6h",
+      "G*5h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗６九玉",
+      "☗７八金",
+      "☗６八銀",
+      "☗５八金"
+    ]
+  },
+  {
+    "id": "GOTE_KANI",
+    "name": {
+      "ja_JP": "後手カニ囲い",
+      "en_US": "GOTE_KANI"
+    },
+    "pieces": [
+      "k*4a",
+      "g*3b",
+      "s*4b",
+      "g*5b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖４一玉",
+      "☖３二金",
+      "☖４二銀",
+      "☖５二金"
+    ]
+  },
+  {
+    "id": "SENTE_GINTACHI_YAGURA",
+    "name": {
+      "ja_JP": "先手銀立ち矢倉",
+      "en_US": "SENTE_GINTACHI_YAGURA"
+    },
+    "pieces": [
+      "K*8h",
+      "G*7h",
+      "G*6g",
+      "S*7f"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗７八金",
+      "☗６七金",
+      "☗７六銀"
+    ]
+  },
+  {
+    "id": "GOTE_GINTACHI_YAGURA",
+    "name": {
+      "ja_JP": "後手銀立ち矢倉",
+      "en_US": "GOTE_GINTACHI_YAGURA"
+    },
+    "pieces": [
+      "k*2b",
+      "g*3b",
+      "g*4c",
+      "s*3d"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖３二金",
+      "☖４三金",
+      "☖３四銀"
+    ]
+  },
+  {
+    "id": "SENTE_GIN_YAGURA",
+    "name": {
+      "ja_JP": "先手銀矢倉",
+      "en_US": "SENTE_GIN_YAGURA"
+    },
+    "pieces": [
+      "K*8h",
+      "G*7h",
+      "S*7g",
+      "S*6g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗７八金",
+      "☗７七銀",
+      "☗６七銀"
+    ]
+  },
+  {
+    "id": "GOTE_GIN_YAGURA",
+    "name": {
+      "ja_JP": "後手銀矢倉",
+      "en_US": "GOTE_GIN_YAGURA"
+    },
+    "pieces": [
+      "k*2b",
+      "g*3b",
+      "s*3c",
+      "s*4c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖３二金",
+      "☖３三銀",
+      "☖４三銀"
+    ]
+  },
+  {
+    "id": "SENTE_BONANZA",
+    "name": {
+      "ja_JP": "先手ボナンザ囲い",
+      "en_US": "SENTE_BONANZA"
+    },
+    "pieces": [
+      "K*7h",
+      "S*7g",
+      "G*6h",
+      "G*5h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八玉",
+      "☗７七銀",
+      "☗６八金",
+      "☗５八金"
+    ]
+  },
+  {
+    "id": "GOTE_BONANZA",
+    "name": {
+      "ja_JP": "後手ボナンザ囲い",
+      "en_US": "GOTE_BONANZA"
+    },
+    "pieces": [
+      "k*3b",
+      "s*3c",
+      "g*4b",
+      "g*5b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二玉",
+      "☖３三銀",
+      "☖４二金",
+      "☖５二金"
+    ]
+  },
+  {
+    "id": "SENTE_SOU_YAGURA",
+    "name": {
+      "ja_JP": "先手総矢倉",
+      "en_US": "SENTE_SOU_YAGURA"
+    },
+    "pieces": [
+      "K*8h",
+      "G*7h",
+      "S*7g",
+      "G*6g",
+      "S*5g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗７八金",
+      "☗７七銀",
+      "☗６七金",
+      "☗５七銀"
+    ]
+  },
+  {
+    "id": "GOTE_SOU_YAGURA",
+    "name": {
+      "ja_JP": "後手総矢倉",
+      "en_US": "GOTE_SOU_YAGURA"
+    },
+    "pieces": [
+      "k*2b",
+      "g*3b",
+      "s*3c",
+      "g*4c",
+      "s*5c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖３二金",
+      "☖３三銀",
+      "☖４三金",
+      "☖５三銀"
+    ]
+  },
+  {
+    "id": "SENTE_HISHI_YAGURA",
+    "name": {
+      "ja_JP": "先手菱矢倉",
+      "en_US": "SENTE_HISHI_YAGURA"
+    },
+    "pieces": [
+      "K*8h",
+      "G*7h",
+      "S*7g",
+      "G*6g",
+      "S*6f"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗７八金",
+      "☗７七銀",
+      "☗６七金",
+      "☗６六銀"
+    ]
+  },
+  {
+    "id": "GOTE_HISHI_YAGURA",
+    "name": {
+      "ja_JP": "後手菱矢倉",
+      "en_US": "GOTE_HISHI_YAGURA"
+    },
+    "pieces": [
+      "k*2b",
+      "g*3b",
+      "s*3c",
+      "g*4c",
+      "s*4d"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖３二金",
+      "☖３三銀",
+      "☖４三金",
+      "☖４四銀"
+    ]
+  },
+  {
+    "id": "SENTE_KIKUSUI_YAGURA",
+    "name": {
+      "ja_JP": "先手菊水矢倉",
+      "en_US": "SENTE_KIKUSUI_YAGURA"
+    },
+    "pieces": [
+      "K*8i",
+      "G*7h",
+      "S*8h",
+      "G*6g",
+      "N*7g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８九玉",
+      "☗７八金",
+      "☗８八銀",
+      "☗６七金",
+      "☗７七桂"
+    ]
+  },
+  {
+    "id": "GOTE_KIKUSUI_YAGURA",
+    "name": {
+      "ja_JP": "後手菊水矢倉",
+      "en_US": "GOTE_KIKUSUI_YAGURA"
+    },
+    "pieces": [
+      "k*2a",
+      "g*3b",
+      "s*2b",
+      "g*4c",
+      "n*3c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２一玉",
+      "☖３二金",
+      "☖２二銀",
+      "☖４三金",
+      "☖３三桂"
+    ]
+  },
+  {
+    "id": "SENTE_HEKOMI_YAGURA",
+    "name": {
+      "ja_JP": "先手凹み矢倉",
+      "en_US": "SENTE_HEKOMI_YAGURA"
+    },
+    "pieces": [
+      "K*8h",
+      "G*7h",
+      "S*7g",
+      "G*6h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗７八金",
+      "☗７七銀",
+      "☗６八金"
+    ]
+  },
+  {
+    "id": "GOTE_HEKOMI_YAGURA",
+    "name": {
+      "ja_JP": "後手凹み矢倉",
+      "en_US": "GOTE_HEKOMI_YAGURA"
+    },
+    "pieces": [
+      "k*2b",
+      "g*3b",
+      "s*3c",
+      "g*4b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖３二金",
+      "☖３三銀",
+      "☖４二金"
+    ]
+  },
+  {
+    "id": "SENTE_KATA_YAGURA",
+    "name": {
+      "ja_JP": "先手片矢倉",
+      "en_US": "SENTE_KATA_YAGURA"
+    },
+    "pieces": [
+      "K*7h",
+      "S*7g",
+      "G*6g",
+      "G*6h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八玉",
+      "☗７七銀",
+      "☗６七金",
+      "☗６八金"
+    ]
+  },
+  {
+    "id": "GOTE_KATA_YAGURA",
+    "name": {
+      "ja_JP": "後手片矢倉",
+      "en_US": "GOTE_KATA_YAGURA"
+    },
+    "pieces": [
+      "k*3b",
+      "s*3c",
+      "g*4c",
+      "g*4b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二玉",
+      "☖３三銀",
+      "☖４三金",
+      "☖４二金"
+    ]
+  },
+  {
+    "id": "SENTE_GINKAN",
+    "name": {
+      "ja_JP": "先手銀冠",
+      "en_US": "SENTE_GINKAN"
+    },
+    "pieces": [
+      "K*8h",
+      "S*8g",
+      "G*7h",
+      "G*6g"
+    ],
+    "tags_disable": [
+      "SENTE_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗８七銀",
+      "☗７八金",
+      "☗６七金"
+    ]
+  },
+  {
+    "id": "GOTE_GINKAN",
+    "name": {
+      "ja_JP": "後手銀冠",
+      "en_US": "GOTE_GINKAN"
+    },
+    "pieces": [
+      "k*2b",
+      "s*2c",
+      "g*3b",
+      "g*4c"
+    ],
+    "tags_disable": [
+      "GOTE_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖２三銀",
+      "☖３二金",
+      "☖４三金"
+    ]
+  },
+  {
+    "id": "SENTE_GINKAN_ANAGUMA",
+    "name": {
+      "ja_JP": "先手銀冠穴熊",
+      "en_US": "SENTE_GINKAN_ANAGUMA"
+    },
+    "pieces": [
+      "K*9i",
+      "L*9h",
+      "N*8i",
+      "S*8g",
+      "G*7h"
+    ],
+    "tags_disable": [
+      "SENTE_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗９九玉",
+      "☗９八香",
+      "☗８九桂",
+      "☗８七銀",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_GINKAN_ANAGUMA",
+    "name": {
+      "ja_JP": "後手銀冠穴熊",
+      "en_US": "GOTE_GINKAN_ANAGUMA"
+    },
+    "pieces": [
+      "k*1a",
+      "l*1b",
+      "n*2a",
+      "s*2c",
+      "g*3b"
+    ],
+    "tags_disable": [
+      "GOTE_KATA_GINKAN"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖１一玉",
+      "☖１二香",
+      "☖２一桂",
+      "☖２三銀",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_KATA_GINKAN",
+    "name": {
+      "ja_JP": "先手片銀冠",
+      "en_US": "SENTE_KATA_GINKAN"
+    },
+    "pieces": [
+      "K*8h",
+      "S*8g",
+      "G*7h"
+    ],
+    "tags_exclude": [
+      "SENTE_GINKAN",
+      "SENTE_GINKAN_ANAGUMA"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗８七銀",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_KATA_GINKAN",
+    "name": {
+      "ja_JP": "後手片銀冠",
+      "en_US": "GOTE_KATA_GINKAN"
+    },
+    "pieces": [
+      "k*2b",
+      "s*2c",
+      "g*3b"
+    ],
+    "tags_exclude": [
+      "GOTE_GINKAN",
+      "GOTE_GINKAN_ANAGUMA"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖２三銀",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_KATA_GINKAN",
+    "name": {
+      "ja_JP": "先手片銀冠",
+      "en_US": "SENTE_KATA_GINKAN"
+    },
+    "pieces": [
+      "K*8h",
+      "S*8g",
+      "G*7h"
+    ],
+    "tags_exclude": [
+      "SENTE_GINKAN",
+      "SENTE_GINKAN_ANAGUMA"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗８七銀",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_KATA_GINKAN",
+    "name": {
+      "ja_JP": "後手片銀冠",
+      "en_US": "GOTE_KATA_GINKAN"
+    },
+    "pieces": [
+      "k*2b",
+      "s*2c",
+      "g*3b"
+    ],
+    "tags_exclude": [
+      "GOTE_GINKAN",
+      "GOTE_GINKAN_ANAGUMA"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖２三銀",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_ANAGUMA",
+    "name": {
+      "ja_JP": "先手穴熊",
+      "en_US": "SENTE_ANAGUMA"
+    },
+    "pieces": [
+      "K*9i",
+      "L*9h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗９九玉",
+      "☗９八香"
+    ]
+  },
+  {
+    "id": "GOTE_ANAGUMA",
+    "name": {
+      "ja_JP": "後手穴熊",
+      "en_US": "GOTE_ANAGUMA"
+    },
+    "pieces": [
+      "k*1a",
+      "l*1b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖１一玉",
+      "☖１二香"
+    ]
+  },
+  {
+    "id": "SENTE_MATSUO_ANAGUMA",
+    "name": {
+      "ja_JP": "先手松尾流穴熊",
+      "en_US": "SENTE_MATSUO_ANAGUMA"
+    },
+    "pieces": [
+      "K*9i",
+      "L*9h",
+      "N*8i",
+      "S*8h",
+      "S*7i",
+      "G*7h",
+      "G*6g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗９九玉",
+      "☗９八香",
+      "☗８九桂",
+      "☗８八銀",
+      "☗７九銀",
+      "☗７八金",
+      "☗６七金"
+    ]
+  },
+  {
+    "id": "GOTE_MATSUO_ANAGUMA",
+    "name": {
+      "ja_JP": "後手松尾流穴熊",
+      "en_US": "GOTE_MATSUO_ANAGUMA"
+    },
+    "pieces": [
+      "k*1a",
+      "l*1b",
+      "n*2a",
+      "s*2b",
+      "s*3a",
+      "g*3b",
+      "g*4c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖１一玉",
+      "☖１二香",
+      "☖２一桂",
+      "☖２二銀",
+      "☖３一銀",
+      "☖３二金",
+      "☖４三金"
+    ]
+  },
+  {
+    "id": "SENTE_BIG4",
+    "name": {
+      "ja_JP": "先手ビッグ４",
+      "en_US": "SENTE_BIG4"
+    },
+    "pieces": [
+      "K*9i",
+      "L*9h",
+      "N*8i",
+      "G*8h",
+      "G*7h",
+      "S*8g",
+      "S*7g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗９九玉",
+      "☗９八香",
+      "☗８九桂",
+      "☗８八金",
+      "☗７八金",
+      "☗８七銀",
+      "☗７七銀"
+    ]
+  },
+  {
+    "id": "GOTE_BIG4",
+    "name": {
+      "ja_JP": "後手ビッグ４",
+      "en_US": "GOTE_BIG4"
+    },
+    "pieces": [
+      "k*1a",
+      "l*1b",
+      "n*2a",
+      "g*2b",
+      "g*3b",
+      "s*2c",
+      "s*3c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖１一玉",
+      "☖１二香",
+      "☖２一桂",
+      "☖２二金",
+      "☖３二金",
+      "☖２三銀",
+      "☖３三銀"
+    ]
+  },
+  {
+    "id": "SENTE_MILLENNIUM",
+    "name": {
+      "ja_JP": "先手ミレニアム",
+      "en_US": "SENTE_MILLENNIUM"
+    },
+    "pieces": [
+      "K*8i",
+      "N*7g",
+      "S*8h",
+      "G*7i",
+      "G*7h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８九玉",
+      "☗７七桂",
+      "☗８八銀",
+      "☗７九金",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_MILLENNIUM",
+    "name": {
+      "ja_JP": "後手ミレニアム",
+      "en_US": "GOTE_MILLENNIUM"
+    },
+    "pieces": [
+      "k*2a",
+      "n*3c",
+      "s*2b",
+      "g*3a",
+      "g*3b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２一玉",
+      "☖３三桂",
+      "☖２二銀",
+      "☖３一金",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_FUNAGAKOI",
+    "name": {
+      "ja_JP": "先手船囲い",
+      "en_US": "SENTE_FUNAGAKOI"
+    },
+    "pieces": [
+      "K*7h",
+      "S*7i",
+      "G*6i",
+      "G*5h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八玉",
+      "☗７九銀",
+      "☗６九金",
+      "☗５八金"
+    ]
+  },
+  {
+    "id": "GOTE_FUNAGAKOI",
+    "name": {
+      "ja_JP": "後手船囲い",
+      "en_US": "GOTE_FUNAGAKOI"
+    },
+    "pieces": [
+      "k*3b",
+      "s*3a",
+      "g*4a",
+      "g*5b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二玉",
+      "☖３一銀",
+      "☖４一金",
+      "☖５二金"
+    ]
+  },
+  {
+    "id": "SENTE_HAKOIRI_MUSUME",
+    "name": {
+      "ja_JP": "先手箱入り娘",
+      "en_US": "SENTE_HAKOIRI_MUSUME"
+    },
+    "pieces": [
+      "K*7h",
+      "S*7i",
+      "G*6i",
+      "G*6h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八玉",
+      "☗７九銀",
+      "☗６九金",
+      "☗６八金"
+    ]
+  },
+  {
+    "id": "GOTE_HAKOIRI_MUSUME",
+    "name": {
+      "ja_JP": "後手箱入り娘",
+      "en_US": "GOTE_HAKOIRI_MUSUME"
+    },
+    "pieces": [
+      "k*3b",
+      "s*3a",
+      "g*4a",
+      "g*4b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二玉",
+      "☖３一銀",
+      "☖４一金",
+      "☖４二金"
+    ]
+  },
+  {
+    "id": "SENTE_CEMENT",
+    "name": {
+      "ja_JP": "先手セメント囲い",
+      "en_US": "SENTE_CEMENT"
+    },
+    "pieces": [
+      "K*7h",
+      "S*6g",
+      "S*5g",
+      "G*6h",
+      "G*5h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八玉",
+      "☗６七銀",
+      "☗５七銀",
+      "☗６八金",
+      "☗５八金"
+    ]
+  },
+  {
+    "id": "GOTE_CEMENT",
+    "name": {
+      "ja_JP": "後手セメント囲い",
+      "en_US": "GOTE_CEMENT"
+    },
+    "pieces": [
+      "k*3b",
+      "s*4c",
+      "s*5c",
+      "g*4b",
+      "g*5b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二玉",
+      "☖４三銀",
+      "☖５三銀",
+      "☖４二金",
+      "☖５二金"
+    ]
+  },
+  {
+    "id": "SENTE_HIDARI_MINO",
+    "name": {
+      "ja_JP": "先手左美濃",
+      "en_US": "SENTE_HIDARI_MINO"
+    },
+    "pieces": [
+      "K*8h",
+      "S*7h",
+      "G*6i"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８八玉",
+      "☗７八銀",
+      "☗６九金"
+    ]
+  },
+  {
+    "id": "GOTE_HIDARI_MINO",
+    "name": {
+      "ja_JP": "後手左美濃",
+      "en_US": "GOTE_HIDARI_MINO"
+    },
+    "pieces": [
+      "k*2b",
+      "s*3b",
+      "g*4a"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２二玉",
+      "☖３二銀",
+      "☖４一金"
+    ]
+  },
+  {
+    "id": "SENTE_TENSHUKAKU_MINO",
+    "name": {
+      "ja_JP": "先手天守閣美濃",
+      "en_US": "SENTE_TENSHUKAKU_MINO"
+    },
+    "pieces": [
+      "K*8g",
+      "B*8h",
+      "S*7h",
+      "G*6i",
+      "G*5h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗８七玉",
+      "☗８八角",
+      "☗７八銀",
+      "☗６九金",
+      "☗５八金"
+    ]
+  },
+  {
+    "id": "GOTE_TENSHUKAKU_MINO",
+    "name": {
+      "ja_JP": "後手天守閣美濃",
+      "en_US": "GOTE_TENSHUKAKU_MINO"
+    },
+    "pieces": [
+      "k*2c",
+      "b*2b",
+      "s*3b",
+      "g*4a",
+      "g*5b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖２三玉",
+      "☖２二角",
+      "☖３二銀",
+      "☖４一金",
+      "☖５二金"
+    ]
+  },
+  {
+    "id": "SENTE_NIMAIGIN_GANGI",
+    "name": {
+      "ja_JP": "先手二枚銀雁木",
+      "en_US": "SENTE_NIMAIGIN_GANGI"
+    },
+    "pieces": [
+      "G*7h",
+      "S*6g",
+      "S*5g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八金",
+      "☗６七銀",
+      "☗５七銀"
+    ]
+  },
+  {
+    "id": "GOTE_NIMAIGIN_GANGI",
+    "name": {
+      "ja_JP": "後手二枚銀雁木",
+      "en_US": "GOTE_NIMAIGIN_GANGI"
+    },
+    "pieces": [
+      "g*3b",
+      "s*4c",
+      "s*5c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二金",
+      "☖４三銀",
+      "☖５三銀"
+    ]
+  },
+  {
+    "id": "SENTE_TUNOGIN_GANGI",
+    "name": {
+      "ja_JP": "先手ツノ銀雁木",
+      "en_US": "SENTE_TUNOGIN_GANGI"
+    },
+    "pieces": [
+      "G*7h",
+      "G*5h",
+      "S*6g",
+      "S*4g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八金",
+      "☗５八金",
+      "☗６七銀",
+      "☗４七銀"
+    ]
+  },
+  {
+    "id": "GOTE_TUNOGIN_GANGI",
+    "name": {
+      "ja_JP": "後手ツノ銀雁木",
+      "en_US": "GOTE_TUNOGIN_GANGI"
+    },
+    "pieces": [
+      "g*3b",
+      "g*5b",
+      "s*4c",
+      "s*6c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二金",
+      "☖５二金",
+      "☖４三銀",
+      "☖６三銀"
+    ]
+  },
+  {
+    "id": "SENTE_ELMO",
+    "name": {
+      "ja_JP": "先手elmo囲い",
+      "en_US": "SENTE_ELMO"
+    },
+    "pieces": [
+      "K*7h",
+      "K*5h",
+      "G*7i",
+      "S*6h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７八玉",
+      "☗５八玉",
+      "☗７九金",
+      "☗６八銀"
+    ]
+  },
+  {
+    "id": "GOTE_ELMO",
+    "name": {
+      "ja_JP": "後手elmo囲い",
+      "en_US": "GOTE_ELMO"
+    },
+    "pieces": [
+      "k*3b",
+      "k*5b",
+      "g*3a",
+      "s*4b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３二玉",
+      "☖５二玉",
+      "☖３一金",
+      "☖４二銀"
+    ]
+  },
+  {
+    "id": "SENTE_URESHINO",
+    "name": {
+      "ja_JP": "先手嬉野流",
+      "en_US": "SENTE_URESHINO"
+    },
+    "pieces": [
+      "S*6h",
+      "B*7i"
+    ],
+    "tesuu_max": 4,
+    "pieces_readable": [
+      "☗６八銀",
+      "☗７九角"
+    ]
+  },
+  {
+    "id": "GOTE_URESHINO",
+    "name": {
+      "ja_JP": "後手嬉野流",
+      "en_US": "GOTE_URESHINO"
+    },
+    "pieces": [
+      "s*4b",
+      "b*3a"
+    ],
+    "tesuu_max": 4,
+    "pieces_readable": [
+      "☖４二銀",
+      "☖３一角"
+    ]
+  },
+  {
+    "id": "SENTE_SHIN_URESHINO",
+    "name": {
+      "ja_JP": "先手新嬉野流",
+      "en_US": "SENTE_SHIN_URESHINO"
+    },
+    "pieces": [
+      "S*5g",
+      "P*5f"
+    ],
+    "tesuu_max": 6,
+    "pieces_readable": [
+      "☗５七銀",
+      "☗５六歩"
+    ]
+  },
+  {
+    "id": "GOTE_SHIN_URESHINO",
+    "name": {
+      "ja_JP": "後手新嬉野流",
+      "en_US": "GOTE_SHIN_URESHINO"
+    },
+    "pieces": [
+      "s*5c",
+      "p*5d"
+    ],
+    "tesuu_max": 6,
+    "pieces_readable": [
+      "☖５三銀",
+      "☖５四歩"
+    ]
+  },
+  {
+    "id": "SENTE_NAKAZUMAI",
+    "name": {
+      "ja_JP": "先手中住まい",
+      "en_US": "SENTE_NAKAZUMAI"
+    },
+    "pieces": [
+      "K*5h",
+      "G*3h",
+      "G*7h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗５八玉",
+      "☗３八金",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_NAKAZUMAI",
+    "name": {
+      "ja_JP": "後手中住まい",
+      "en_US": "GOTE_NAKAZUMAI"
+    },
+    "pieces": [
+      "k*5b",
+      "g*7b",
+      "g*3b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖５二玉",
+      "☖７二金",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_NAKAHARA",
+    "name": {
+      "ja_JP": "先手中原囲い",
+      "en_US": "SENTE_NAKAHARA"
+    },
+    "pieces": [
+      "K*6i",
+      "G*5i",
+      "S*4h",
+      "G*7h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗６九玉",
+      "☗５九金",
+      "☗４八銀",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_NAKAHARA",
+    "name": {
+      "ja_JP": "後手中原囲い",
+      "en_US": "GOTE_NAKAHARA"
+    },
+    "pieces": [
+      "k*4a",
+      "g*5a",
+      "s*6b",
+      "g*3b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖４一玉",
+      "☖５一金",
+      "☖６二銀",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_YONENAGAGYOKU",
+    "name": {
+      "ja_JP": "先手米長玉",
+      "en_US": "SENTE_YONENAGAGYOKU"
+    },
+    "pieces": [
+      "K*9h",
+      "L*9i",
+      "S*8g",
+      "G*7h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗９八玉",
+      "☗９九香",
+      "☗８七銀",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_YONENAGAGYOKU",
+    "name": {
+      "ja_JP": "後手米長玉",
+      "en_US": "GOTE_YONENAGAGYOKU"
+    },
+    "pieces": [
+      "k*1b",
+      "l*1a",
+      "s*2c",
+      "g*3b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖１二玉",
+      "☖１一香",
+      "☖２三銀",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_KUSHIKATSU",
+    "name": {
+      "ja_JP": "先手串カツ囲い",
+      "en_US": "SENTE_KUSHIKATSU"
+    },
+    "pieces": [
+      "K*9h",
+      "L*9i",
+      "S*8h",
+      "G*7i",
+      "G*7h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗９八玉",
+      "☗９九香",
+      "☗８八銀",
+      "☗７九金",
+      "☗７八金"
+    ]
+  },
+  {
+    "id": "GOTE_KUSHIKATSU",
+    "name": {
+      "ja_JP": "後手串カツ囲い",
+      "en_US": "GOTE_KUSHIKATSU"
+    },
+    "pieces": [
+      "k*1b",
+      "l*1a",
+      "s*2b",
+      "g*3a",
+      "g*3b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖１二玉",
+      "☖１一香",
+      "☖２二銀",
+      "☖３一金",
+      "☖３二金"
+    ]
+  },
+  {
+    "id": "SENTE_KAZAGURUMA",
+    "name": {
+      "ja_JP": "先手風車",
+      "en_US": "SENTE_KAZAGURUMA"
+    },
+    "pieces": [
+      "N*7g",
+      "S*6g",
+      "G*7h",
+      "N*3g",
+      "S*4g"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗７七桂",
+      "☗６七銀",
+      "☗７八金",
+      "☗３七桂",
+      "☗４七銀"
+    ]
+  },
+  {
+    "id": "GOTE_KAZAGURUMA",
+    "name": {
+      "ja_JP": "後手風車",
+      "en_US": "GOTE_KAZAGURUMA"
+    },
+    "pieces": [
+      "n*3c",
+      "s*4c",
+      "g*3b",
+      "n*7c",
+      "s*6c"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖３三桂",
+      "☖４三銀",
+      "☖３二金",
+      "☖７三桂",
+      "☖６三銀"
+    ]
+  },
+  {
+    "id": "SENTE_ICHIGO",
+    "name": {
+      "ja_JP": "先手イチゴ囲い",
+      "en_US": "SENTE_ICHIGO"
+    },
+    "pieces": [
+      "K*6h",
+      "G*7h",
+      "G*5h",
+      "S*7i"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗６八玉",
+      "☗７八金",
+      "☗５八金",
+      "☗７九銀"
+    ]
+  },
+  {
+    "id": "GOTE_ICHIGO",
+    "name": {
+      "ja_JP": "後手イチゴ囲い",
+      "en_US": "GOTE_ICHIGO"
+    },
+    "pieces": [
+      "k*4b",
+      "g*3b",
+      "g*5b",
+      "s*3a"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖４二玉",
+      "☖３二金",
+      "☖５二金",
+      "☖３一銀"
+    ]
+  },
+  {
+    "id": "SENTE_MUTEKI",
+    "name": {
+      "ja_JP": "先手無敵囲い",
+      "en_US": "SENTE_MUTEKI"
+    },
+    "pieces": [
+      "K*5i",
+      "G*6i",
+      "G*4i",
+      "S*6h",
+      "S*4h",
+      "R*5h"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☗５九玉",
+      "☗６九金",
+      "☗４九金",
+      "☗６八銀",
+      "☗４八銀",
+      "☗５八飛"
+    ]
+  },
+  {
+    "id": "GOTE_MUTEKI",
+    "name": {
+      "ja_JP": "後手無敵囲い",
+      "en_US": "GOTE_MUTEKI"
+    },
+    "pieces": [
+      "k*5a",
+      "g*4a",
+      "g*6a",
+      "s*4b",
+      "s*6b",
+      "r*5b"
+    ],
+    "tesuu_max": 64,
+    "pieces_readable": [
+      "☖５一玉",
+      "☖４一金",
+      "☖６一金",
+      "☖４二銀",
+      "☖６二銀",
+      "☖５二飛"
+    ]
+  },
+  {
+    "id": "SENTE_HAYAKURIGIN",
+    "name": {
+      "ja_JP": "先手早繰り銀",
+      "en_US": "SENTE_HAYAKURIGIN"
+    },
+    "pieces": [
+      "S*4f"
+    ],
+    "tesuu_max": 30,
+    "pieces_readable": [
+      "☗４六銀"
+    ]
+  },
+  {
+    "id": "GOTE_HAYAKURIGIN",
+    "name": {
+      "ja_JP": "後手早繰り銀",
+      "en_US": "GOTE_HAYAKURIGIN"
+    },
+    "pieces": [
+      "s*6d"
+    ],
+    "tesuu_max": 30,
+    "pieces_readable": [
+      "☖６四銀"
+    ]
+  },
+  {
+    "id": "SENTE_KOSHIKAKEGIN",
+    "name": {
+      "ja_JP": "先手腰掛け銀",
+      "en_US": "SENTE_KOSHIKAKEGIN"
+    },
+    "pieces": [
+      "S*5f"
+    ],
+    "tesuu_max": 30,
+    "pieces_readable": [
+      "☗５六銀"
+    ]
+  },
+  {
+    "id": "GOTE_KOSHIKAKEGIN",
+    "name": {
+      "ja_JP": "後手腰掛け銀",
+      "en_US": "GOTE_KOSHIKAKEGIN"
+    },
+    "pieces": [
+      "s*5d"
+    ],
+    "tesuu_max": 30,
+    "pieces_readable": [
+      "☖５四銀"
+    ]
+  },
+  {
+    "id": "SENTE_BOUGIN",
+    "name": {
+      "ja_JP": "先手棒銀",
+      "en_US": "SENTE_BOUGIN"
+    },
+    "pieces": [
+      "S*2f"
+    ],
+    "tesuu_max": 30,
+    "pieces_readable": [
+      "☗２六銀"
+    ]
+  },
+  {
+    "id": "GOTE_BOUGIN",
+    "name": {
+      "ja_JP": "後手棒銀",
+      "en_US": "GOTE_BOUGIN"
+    },
+    "pieces": [
+      "s*8d"
+    ],
+    "tesuu_max": 30,
+    "pieces_readable": [
+      "☖８四銀"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*1c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗１三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*9g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖９七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*2c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗２三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*8g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖８七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*3c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗３三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*7g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖７七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*4c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗４三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*6g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖６七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*5c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗５三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*5g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖５七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*6c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗６三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*4g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖４七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*7c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗７三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*3g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖３七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*8c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗８三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*2g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖２七玉"
+    ]
+  },
+  {
+    "id": "SENTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "先手入玉",
+      "en_US": "SENTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "K*9c"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☗９三玉"
+    ]
+  },
+  {
+    "id": "GOTE_NYUUGYOKU",
+    "name": {
+      "ja_JP": "後手入玉",
+      "en_US": "GOTE_NYUUGYOKU"
+    },
+    "pieces": [
+      "k*1g"
+    ],
+    "tesuu_max": 1000000000,
+    "pieces_readable": [
+      "☖１七玉"
+    ]
+  },
+  {
+    "id": "AI_NYUUGYOKU",
+    "name": {
+      "ja_JP": "相入玉",
+      "en_US": "AI_NYUUGYOKU"
+    },
+    "tags_required": [
+      "SENTE_NYUUGYOKU",
+      "GOTE_NYUUGYOKU"
+    ],
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_CHUDAN",
+    "name": {
+      "ja_JP": "中断",
+      "en_US": "CHUDAN"
+    },
+    "special": "CHUDAN",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_TORYO",
+    "name": {
+      "ja_JP": "投了",
+      "en_US": "TORYO"
+    },
+    "special": "TORYO",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_JISHOGI",
+    "name": {
+      "ja_JP": "持将棋",
+      "en_US": "JISHOGI"
+    },
+    "special": "JISHOGI",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_SENNICHITE",
+    "name": {
+      "ja_JP": "千日手",
+      "en_US": "SENNICHITE"
+    },
+    "special": "SENNICHITE",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_TSUMI",
+    "name": {
+      "ja_JP": "詰み",
+      "en_US": "TSUMI"
+    },
+    "special": "TSUMI",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_FUZUMI",
+    "name": {
+      "ja_JP": "不詰",
+      "en_US": "FUZUMI"
+    },
+    "special": "FUZUMI",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_TIME_UP",
+    "name": {
+      "ja_JP": "切れ負け",
+      "en_US": "TIME_UP"
+    },
+    "special": "TIME_UP",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_ILLEGAL_ACTION",
+    "name": {
+      "ja_JP": "反則行為",
+      "en_US": "ILLEGAL_ACTION"
+    },
+    "special": "ILLEGAL_ACTION",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_ILLEGAL_MOVE",
+    "name": {
+      "ja_JP": "反則手",
+      "en_US": "ILLEGAL_MOVE"
+    },
+    "special": "ILLEGAL_MOVE",
+    "tesuu_max": 1000000000
+  },
+  {
+    "id": "SPECIAL_KACHI",
+    "name": {
+      "ja_JP": "勝ち宣言",
+      "en_US": "KACHI"
+    },
+    "special": "KACHI",
+    "tesuu_max": 1000000000
+  }
+]
