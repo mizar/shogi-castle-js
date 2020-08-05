@@ -1,6 +1,6 @@
 # 初期局面
 
-- id: HIRATE
+- id: INITIAL_HIRATE
   name:
     ja_JP: 平手
   pieces:
@@ -67,7 +67,7 @@
 
 # 戦型
 
-- id: KAKUGAWARI
+- id: SHAPE_KAKUGAWARI
   name:
     ja_JP: 角換わり
   hand:
@@ -75,100 +75,100 @@
     - 'b'
   tesuu_max: 20
   noturn: true
-- id: SENTE_HISHASAKI_FUKOUKAN
+- id: SENTE_SHAPE_HISHASAKI_FUKOUKAN
   name:
     ja_JP: 先手飛車先歩交換
-  moves: 
+  moves:
     - R*2h2d
-  capture: 
+  capture:
     - 'p'
   tesuu_max: 20
   hide: true
   noturn: true
-- id: GOTE_HISHASAKI_FUKOUKAN
+- id: GOTE_SHAPE_HISHASAKI_FUKOUKAN
   name:
     ja_JP: 後手飛車先歩交換
-  moves: 
+  moves:
     - r*8b8f
-  capture: 
+  capture:
    - 'P'
   tesuu_max: 20
   hide: true
   noturn: true
-- id: SENTE_YOKOFU
+- id: SENTE_SHAPE_YOKOFU
   name:
     ja_JP: 先手横歩
-  moves: 
+  moves:
     - R*2d3d
-  capture: 
+  capture:
     - 'p'
   tags_disable:
-    - AIGAKARI
+    - SHAPE_AIGAKARI
   tesuu_max: 20
   noturn: true
-- id: GOTE_YOKOFU
+- id: GOTE_SHAPE_YOKOFU
   name:
     ja_JP: 後手横歩
-  moves: 
+  moves:
     - r*8f7f
-  capture: 
+  capture:
     - 'P'
   tags_disable:
-    - AIGAKARI
+    - SHAPE_AIGAKARI
   tesuu_max: 20
   noturn: true
-- id: AIGAKARI
+- id: SHAPE_AIGAKARI
   name:
     ja_JP: 相掛かり
   tags_required:
-    - SENTE_HISHASAKI_FUKOUKAN
-    - GOTE_HISHASAKI_FUKOUKAN
+    - SENTE_SHAPE_HISHASAKI_FUKOUKAN
+    - GOTE_SHAPE_HISHASAKI_FUKOUKAN
   tags_exclude:
-    - SENTE_YOKOFU
-    - GOTE_YOKOFU
+    - SENTE_SHAPE_YOKOFU
+    - GOTE_SHAPE_YOKOFU
   tesuu_max: 64
   noturn: true
-- id: MUKAIBISHA
+- id: SHAPE_MUKAIBISHA
   name:
     ja_JP: 向かい飛車
-  moves: 
+  moves:
     - R*2h8h
   tesuu_max: 20
-- id: SANGEN
+- id: SHAPE_SANGEN
   name:
     ja_JP: 三間飛車
-  moves: 
+  moves:
     - R*2h7h
   tesuu_max: 20
-- id: SHIKEN
+- id: SHAPE_SHIKEN
   name:
     ja_JP: 四間飛車
-  moves: 
+  moves:
     - R*2h6h
   tesuu_max: 20
-- id: NAKABISHA
+- id: SHAPE_NAKABISHA
   name:
     ja_JP: 中飛車
-  moves: 
+  moves:
     - R*2h5h
   tesuu_max: 20
-- id: MIGISHIKEN
+- id: SHAPE_MIGISHIKEN
   name:
     ja_JP: 右四間飛車
-  moves: 
+  moves:
     - R*2h4h
   tesuu_max: 20
-- id: SODEBISHA
+- id: SHAPE_SODEBISHA
   name:
     ja_JP: 袖飛車
-  moves: 
+  moves:
     - R*2h3h
   tesuu_max: 20
 
 # 振り飛車美濃
 
 - id: HON_MINO
-  name: 
+  name:
     ja_JP: 本美濃囲い
   pieces:
     - K*2h
@@ -179,7 +179,7 @@
     - KATA_MINO
   tesuu_max: 64
 - id: TAKA_MINO
-  name: 
+  name:
     ja_JP: 高美濃囲い
   pieces:
     - K*2h
@@ -190,7 +190,7 @@
     - KATA_MINO
   tesuu_max: 64
 - id: GIN_MINO
-  name: 
+  name:
     ja_JP: 銀美濃囲い
   pieces:
     - K*2h
@@ -201,7 +201,7 @@
     - KATA_MINO
   tesuu_max: 64
 - id: KIN_MINO
-  name: 
+  name:
     ja_JP: 金美濃囲い
   pieces:
     - K*2h
@@ -209,7 +209,7 @@
     - S*4h
   tesuu_max: 64
 - id: DIAMOND_MINO
-  name: 
+  name:
     ja_JP: ダイアモンド美濃
   pieces:
     - K*2h
@@ -221,7 +221,7 @@
     - KATA_MINO
   tesuu_max: 64
 - id: KIMURA_MINO
-  name: 
+  name:
     ja_JP: 木村美濃
   pieces:
     - K*2h
@@ -229,7 +229,7 @@
     - S*4g
   tesuu_max: 64
 - id: HIRAME
-  name: 
+  name:
     ja_JP: ヒラメ
   pieces:
     - K*2h
@@ -238,7 +238,7 @@
     - G*5i
   tesuu_max: 64
 - id: KATA_MINO
-  name: 
+  name:
     ja_JP: 片美濃囲い
   pieces:
     - K*2h
@@ -349,16 +349,7 @@
 
 - id: YAGURA
   name:
-    ja_JP: 矢倉
-  pieces:
-    - G*7h
-    - S*7g
-  hand_exclude:
-    - B
-  tesuu_max: 64
-- id: YAGURA
-  name:
-    ja_JP: 矢倉
+    ja_JP: 金矢倉
   pieces:
     - K*8h
     - G*7h
@@ -392,6 +383,15 @@
     - S*7g
     - S*6g
   tesuu_max: 64
+- id: KATA_YAGURA
+  name:
+    ja_JP: 片矢倉
+  pieces:
+    - K*7h
+    - S*7g
+    - G*6g
+    - G*6h
+  tesuu_max: 64
 - id: BONANZA
   name:
     ja_JP: ボナンザ囲い
@@ -400,6 +400,16 @@
     - S*7g
     - G*6h
     - G*5h
+  tesuu_max: 64
+- id: DOI_YAGURA
+  name:
+    ja_JP: 土井矢倉
+  pieces:
+    - K*7h
+    - S*7g
+    - G*6g
+    - G*5h
+    - S*4g
   tesuu_max: 64
 - id: SOU_YAGURA
   name:
@@ -438,15 +448,6 @@
     - K*8h
     - G*7h
     - S*7g
-    - G*6h
-  tesuu_max: 64
-- id: KATA_YAGURA
-  name:
-    ja_JP: 片矢倉
-  pieces:
-    - K*7h
-    - S*7g
-    - G*6g
     - G*6h
   tesuu_max: 64
 
@@ -507,6 +508,17 @@
     - K*9i
     - L*9h
   tesuu_max: 64
+- id: YAGURA_ANAGUMA
+  name:
+    ja_JP: 矢倉穴熊
+  pieces:
+    - K*9i
+    - L*9h
+    - N*8i
+    - S*7g
+    - G*7h
+    - G*6g
+  tesuu_max: 64
 - id: MATSUO_ANAGUMA
   name:
     ja_JP: 松尾流穴熊
@@ -554,7 +566,7 @@
     - G*5h
   tesuu_max: 64
 - id: HAKOIRI_MUSUME
-  name: 
+  name:
     ja_JP: 箱入り娘
   pieces:
     - K*7h
@@ -563,7 +575,7 @@
     - G*6h
   tesuu_max: 64
 - id: CEMENT
-  name: 
+  name:
     ja_JP: セメント囲い
   pieces:
     - K*7h
@@ -597,7 +609,7 @@
 # 居飛車その他
 
 - id: NIMAIGIN_GANGI
-  name: 
+  name:
     ja_JP: 二枚銀雁木
   pieces:
     - G*7h
@@ -605,7 +617,7 @@
     - S*5g
   tesuu_max: 64
 - id: TUNOGIN_GANGI
-  name: 
+  name:
     ja_JP: ツノ銀雁木
   pieces:
     - G*7h
@@ -637,7 +649,7 @@
     - P*5f
   tesuu_max: 6
 - id: NAKAZUMAI
-  name: 
+  name:
     ja_JP: 中住まい
   pieces:
     - K*5h
@@ -645,7 +657,7 @@
     - G*7h
   tesuu_max: 64
 - id: NAKAHARA
-  name: 
+  name:
     ja_JP: 中原囲い
   pieces:
     - K*6i
@@ -791,73 +803,94 @@
 
 # 特殊
 
-- id: SPECIAL_CHUDAN
-  name:
-    ja_JP: 中断
-    en_US: CHUDAN
-  special: CHUDAN
-  tesuu_max: 1e9
-  noturn: true
 - id: SPECIAL_TORYO
   name:
     ja_JP: 投了
-    en_US: TORYO
+    en_US: SPECIAL_TORYO
   special: TORYO
   tesuu_max: 1e9
   noturn: true
-- id: SPECIAL_JISHOGI
+- id: SPECIAL_CHUDAN
   name:
-    ja_JP: 持将棋
-    en_US: JISHOGI
-  special: JISHOGI
+    ja_JP: 中断
+    en_US: SPECIAL_CHUDAN
+  special: CHUDAN
   tesuu_max: 1e9
   noturn: true
 - id: SPECIAL_SENNICHITE
   name:
     ja_JP: 千日手
-    en_US: SENNICHITE
+    en_US: SPECIAL_SENNICHITE
   special: SENNICHITE
+  tesuu_max: 1e9
+  noturn: true
+- id: SPECIAL_TIME_UP
+  name:
+    ja_JP: 切れ負け
+    en_US: SPECIAL_TIME_UP
+  special: TIME_UP
+  tesuu_max: 1e9
+  noturn: true
+- id: SPECIAL_ILLEGAL_MOVE
+  name:
+    ja_JP: 反則手
+    en_US: SPECIAL_ILLEGAL_MOVE
+  special: ILLEGAL_MOVE
+  tesuu_max: 1e9
+  noturn: true
+- id: SPECIAL_SENTE_ILLEGAL_ACTION
+  name:
+    ja_JP: 先手反則行為
+    en_US: SPECIAL_SENTE_ILLEGAL_ACTION
+  special: +ILLEGAL_ACTION
+  tesuu_max: 1e9
+  noturn: true
+- id: SPECIAL_GOTE_ILLEGAL_ACTION
+  name:
+    ja_JP: 後手反則行為
+    en_US: SPECIAL_GOTE_ILLEGAL_ACTION
+  special: -ILLEGAL_ACTION
+  tesuu_max: 1e9
+  noturn: true
+- id: SPECIAL_JISHOGI
+  name:
+    ja_JP: 持将棋
+    en_US: SPECIAL_JISHOGI
+  special: JISHOGI
+  tesuu_max: 1e9
+  noturn: true
+- id: SPECIAL_KACHI
+  name:
+    ja_JP: 勝ち宣言
+    en_US: SPECIAL_KACHI
+  special: KACHI
+  tesuu_max: 1e9
+  noturn: true
+- id: SPECIAL_HIKIWAKE
+  name:
+    ja_JP: 引き分け宣言
+    en_US: SPECIAL_HIKIWAKE
+  special: HIKIWAKE
   tesuu_max: 1e9
   noturn: true
 - id: SPECIAL_TSUMI
   name:
     ja_JP: 詰み
-    en_US: TSUMI
+    en_US: SPECIAL_TSUMI
   special: TSUMI
   tesuu_max: 1e9
   noturn: true
 - id: SPECIAL_FUZUMI
   name:
     ja_JP: 不詰
-    en_US: FUZUMI
+    en_US: SPECIAL_FUZUMI
   special: FUZUMI
   tesuu_max: 1e9
   noturn: true
-- id: SPECIAL_TIME_UP
+- id: SPECIAL_ERROR
   name:
-    ja_JP: 切れ負け
-    en_US: TIME_UP
-  special: TIME_UP
-  tesuu_max: 1e9
-  noturn: true
-- id: SPECIAL_ILLEGAL_ACTION
-  name:
-    ja_JP: 反則行為
-    en_US: ILLEGAL_ACTION
-  special: ILLEGAL_ACTION
-  tesuu_max: 1e9
-  noturn: true
-- id: SPECIAL_ILLEGAL_MOVE
-  name:
-    ja_JP: 反則手
-    en_US: ILLEGAL_MOVE
-  special: ILLEGAL_MOVE
-  tesuu_max: 1e9
-  noturn: true
-- id: SPECIAL_KACHI
-  name:
-    ja_JP: 勝ち宣言
-    en_US: KACHI
-  special: KACHI
+    ja_JP: エラー
+    en_US: SPECIAL_ERROR
+  special: ERROR
   tesuu_max: 1e9
   noturn: true

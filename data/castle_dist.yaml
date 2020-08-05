@@ -1,7 +1,7 @@
-- id: HIRATE
+- id: INITIAL_HIRATE
   name:
     ja_JP: 平手
-    en_US: HIRATE
+    en_US: INITIAL_HIRATE
   pieces:
     - K*5i
     - G*6i
@@ -120,10 +120,10 @@
     - ☖桂
     - ☖香
     - ☖歩
-- id: KAKUGAWARI
+- id: SHAPE_KAKUGAWARI
   name:
     ja_JP: 角換わり
-    en_US: KAKUGAWARI
+    en_US: SHAPE_KAKUGAWARI
   hand:
     - B
     - b
@@ -131,10 +131,10 @@
   hand_readable:
     - ☗角
     - ☖角
-- id: SENTE_HISHASAKI_FUKOUKAN
+- id: SENTE_SHAPE_HISHASAKI_FUKOUKAN
   name:
     ja_JP: 先手飛車先歩交換
-    en_US: SENTE_HISHASAKI_FUKOUKAN
+    en_US: SENTE_SHAPE_HISHASAKI_FUKOUKAN
   moves:
     - R*2h2d
   capture:
@@ -145,10 +145,10 @@
     - ☗２八飛→☗２四飛
   capture_readable:
     - ☖歩
-- id: GOTE_HISHASAKI_FUKOUKAN
+- id: GOTE_SHAPE_HISHASAKI_FUKOUKAN
   name:
     ja_JP: 後手飛車先歩交換
-    en_US: GOTE_HISHASAKI_FUKOUKAN
+    en_US: GOTE_SHAPE_HISHASAKI_FUKOUKAN
   moves:
     - r*8b8f
   capture:
@@ -159,150 +159,150 @@
     - ☖８二飛→☖８六飛
   capture_readable:
     - ☗歩
-- id: SENTE_YOKOFU
+- id: SENTE_SHAPE_YOKOFU
   name:
     ja_JP: 先手横歩
-    en_US: SENTE_YOKOFU
+    en_US: SENTE_SHAPE_YOKOFU
   moves:
     - R*2d3d
   capture:
     - p
   tags_disable:
-    - AIGAKARI
+    - SHAPE_AIGAKARI
   tesuu_max: 20
   moves_readable:
     - ☗２四飛→☗３四飛
   capture_readable:
     - ☖歩
-- id: GOTE_YOKOFU
+- id: GOTE_SHAPE_YOKOFU
   name:
     ja_JP: 後手横歩
-    en_US: GOTE_YOKOFU
+    en_US: GOTE_SHAPE_YOKOFU
   moves:
     - r*8f7f
   capture:
     - P
   tags_disable:
-    - AIGAKARI
+    - SHAPE_AIGAKARI
   tesuu_max: 20
   moves_readable:
     - ☖８六飛→☖７六飛
   capture_readable:
     - ☗歩
-- id: AIGAKARI
+- id: SHAPE_AIGAKARI
   name:
     ja_JP: 相掛かり
-    en_US: AIGAKARI
+    en_US: SHAPE_AIGAKARI
   tags_required:
-    - SENTE_HISHASAKI_FUKOUKAN
-    - GOTE_HISHASAKI_FUKOUKAN
+    - SENTE_SHAPE_HISHASAKI_FUKOUKAN
+    - GOTE_SHAPE_HISHASAKI_FUKOUKAN
   tags_exclude:
-    - SENTE_YOKOFU
-    - GOTE_YOKOFU
+    - SENTE_SHAPE_YOKOFU
+    - GOTE_SHAPE_YOKOFU
   tesuu_max: 64
-- id: SENTE_MUKAIBISHA
+- id: SENTE_SHAPE_MUKAIBISHA
   name:
     ja_JP: 先手向かい飛車
-    en_US: SENTE_MUKAIBISHA
+    en_US: SENTE_SHAPE_MUKAIBISHA
   moves:
     - R*2h8h
   tesuu_max: 20
   moves_readable:
     - ☗２八飛→☗８八飛
-- id: GOTE_MUKAIBISHA
+- id: GOTE_SHAPE_MUKAIBISHA
   name:
     ja_JP: 後手向かい飛車
-    en_US: GOTE_MUKAIBISHA
+    en_US: GOTE_SHAPE_MUKAIBISHA
   moves:
     - r*8b2b
   tesuu_max: 20
   moves_readable:
     - ☖８二飛→☖２二飛
-- id: SENTE_SANGEN
+- id: SENTE_SHAPE_SANGEN
   name:
     ja_JP: 先手三間飛車
-    en_US: SENTE_SANGEN
+    en_US: SENTE_SHAPE_SANGEN
   moves:
     - R*2h7h
   tesuu_max: 20
   moves_readable:
     - ☗２八飛→☗７八飛
-- id: GOTE_SANGEN
+- id: GOTE_SHAPE_SANGEN
   name:
     ja_JP: 後手三間飛車
-    en_US: GOTE_SANGEN
+    en_US: GOTE_SHAPE_SANGEN
   moves:
     - r*8b3b
   tesuu_max: 20
   moves_readable:
     - ☖８二飛→☖３二飛
-- id: SENTE_SHIKEN
+- id: SENTE_SHAPE_SHIKEN
   name:
     ja_JP: 先手四間飛車
-    en_US: SENTE_SHIKEN
+    en_US: SENTE_SHAPE_SHIKEN
   moves:
     - R*2h6h
   tesuu_max: 20
   moves_readable:
     - ☗２八飛→☗６八飛
-- id: GOTE_SHIKEN
+- id: GOTE_SHAPE_SHIKEN
   name:
     ja_JP: 後手四間飛車
-    en_US: GOTE_SHIKEN
+    en_US: GOTE_SHAPE_SHIKEN
   moves:
     - r*8b4b
   tesuu_max: 20
   moves_readable:
     - ☖８二飛→☖４二飛
-- id: SENTE_NAKABISHA
+- id: SENTE_SHAPE_NAKABISHA
   name:
     ja_JP: 先手中飛車
-    en_US: SENTE_NAKABISHA
+    en_US: SENTE_SHAPE_NAKABISHA
   moves:
     - R*2h5h
   tesuu_max: 20
   moves_readable:
     - ☗２八飛→☗５八飛
-- id: GOTE_NAKABISHA
+- id: GOTE_SHAPE_NAKABISHA
   name:
     ja_JP: 後手中飛車
-    en_US: GOTE_NAKABISHA
+    en_US: GOTE_SHAPE_NAKABISHA
   moves:
     - r*8b5b
   tesuu_max: 20
   moves_readable:
     - ☖８二飛→☖５二飛
-- id: SENTE_MIGISHIKEN
+- id: SENTE_SHAPE_MIGISHIKEN
   name:
     ja_JP: 先手右四間飛車
-    en_US: SENTE_MIGISHIKEN
+    en_US: SENTE_SHAPE_MIGISHIKEN
   moves:
     - R*2h4h
   tesuu_max: 20
   moves_readable:
     - ☗２八飛→☗４八飛
-- id: GOTE_MIGISHIKEN
+- id: GOTE_SHAPE_MIGISHIKEN
   name:
     ja_JP: 後手右四間飛車
-    en_US: GOTE_MIGISHIKEN
+    en_US: GOTE_SHAPE_MIGISHIKEN
   moves:
     - r*8b6b
   tesuu_max: 20
   moves_readable:
     - ☖８二飛→☖６二飛
-- id: SENTE_SODEBISHA
+- id: SENTE_SHAPE_SODEBISHA
   name:
     ja_JP: 先手袖飛車
-    en_US: SENTE_SODEBISHA
+    en_US: SENTE_SHAPE_SODEBISHA
   moves:
     - R*2h3h
   tesuu_max: 20
   moves_readable:
     - ☗２八飛→☗３八飛
-- id: GOTE_SODEBISHA
+- id: GOTE_SHAPE_SODEBISHA
   name:
     ja_JP: 後手袖飛車
-    en_US: GOTE_SODEBISHA
+    en_US: GOTE_SHAPE_SODEBISHA
   moves:
     - r*8b7b
   tesuu_max: 20
@@ -836,37 +836,7 @@
     - ☖７一銀
 - id: SENTE_YAGURA
   name:
-    ja_JP: 先手矢倉
-    en_US: SENTE_YAGURA
-  pieces:
-    - G*7h
-    - S*7g
-  hand_exclude:
-    - B
-  tesuu_max: 64
-  pieces_readable:
-    - ☗７八金
-    - ☗７七銀
-  hand_exclude_readable:
-    - ☗角
-- id: GOTE_YAGURA
-  name:
-    ja_JP: 後手矢倉
-    en_US: GOTE_YAGURA
-  pieces:
-    - g*3b
-    - s*3c
-  hand_exclude:
-    - b
-  tesuu_max: 64
-  pieces_readable:
-    - ☖３二金
-    - ☖３三銀
-  hand_exclude_readable:
-    - ☖角
-- id: SENTE_YAGURA
-  name:
-    ja_JP: 先手矢倉
+    ja_JP: 先手金矢倉
     en_US: SENTE_YAGURA
   pieces:
     - K*8h
@@ -881,7 +851,7 @@
     - ☗６七金
 - id: GOTE_YAGURA
   name:
-    ja_JP: 後手矢倉
+    ja_JP: 後手金矢倉
     en_US: GOTE_YAGURA
   pieces:
     - k*2b
@@ -984,6 +954,36 @@
     - ☖３二金
     - ☖３三銀
     - ☖４三銀
+- id: SENTE_KATA_YAGURA
+  name:
+    ja_JP: 先手片矢倉
+    en_US: SENTE_KATA_YAGURA
+  pieces:
+    - K*7h
+    - S*7g
+    - G*6g
+    - G*6h
+  tesuu_max: 64
+  pieces_readable:
+    - ☗７八玉
+    - ☗７七銀
+    - ☗６七金
+    - ☗６八金
+- id: GOTE_KATA_YAGURA
+  name:
+    ja_JP: 後手片矢倉
+    en_US: GOTE_KATA_YAGURA
+  pieces:
+    - k*3b
+    - s*3c
+    - g*4c
+    - g*4b
+  tesuu_max: 64
+  pieces_readable:
+    - ☖３二玉
+    - ☖３三銀
+    - ☖４三金
+    - ☖４二金
 - id: SENTE_BONANZA
   name:
     ja_JP: 先手ボナンザ囲い
@@ -1014,6 +1014,40 @@
     - ☖３三銀
     - ☖４二金
     - ☖５二金
+- id: SENTE_DOI_YAGURA
+  name:
+    ja_JP: 先手土井矢倉
+    en_US: SENTE_DOI_YAGURA
+  pieces:
+    - K*7h
+    - S*7g
+    - G*6g
+    - G*5h
+    - S*4g
+  tesuu_max: 64
+  pieces_readable:
+    - ☗７八玉
+    - ☗７七銀
+    - ☗６七金
+    - ☗５八金
+    - ☗４七銀
+- id: GOTE_DOI_YAGURA
+  name:
+    ja_JP: 後手土井矢倉
+    en_US: GOTE_DOI_YAGURA
+  pieces:
+    - k*3b
+    - s*3c
+    - g*4c
+    - g*5b
+    - s*6c
+  tesuu_max: 64
+  pieces_readable:
+    - ☖３二玉
+    - ☖３三銀
+    - ☖４三金
+    - ☖５二金
+    - ☖６三銀
 - id: SENTE_SOU_YAGURA
   name:
     ja_JP: 先手総矢倉
@@ -1145,36 +1179,6 @@
     - ☖２二玉
     - ☖３二金
     - ☖３三銀
-    - ☖４二金
-- id: SENTE_KATA_YAGURA
-  name:
-    ja_JP: 先手片矢倉
-    en_US: SENTE_KATA_YAGURA
-  pieces:
-    - K*7h
-    - S*7g
-    - G*6g
-    - G*6h
-  tesuu_max: 64
-  pieces_readable:
-    - ☗７八玉
-    - ☗７七銀
-    - ☗６七金
-    - ☗６八金
-- id: GOTE_KATA_YAGURA
-  name:
-    ja_JP: 後手片矢倉
-    en_US: GOTE_KATA_YAGURA
-  pieces:
-    - k*3b
-    - s*3c
-    - g*4c
-    - g*4b
-  tesuu_max: 64
-  pieces_readable:
-    - ☖３二玉
-    - ☖３三銀
-    - ☖４三金
     - ☖４二金
 - id: SENTE_GINKAN
   name:
@@ -1334,6 +1338,44 @@
   pieces_readable:
     - ☖１一玉
     - ☖１二香
+- id: SENTE_YAGURA_ANAGUMA
+  name:
+    ja_JP: 先手矢倉穴熊
+    en_US: SENTE_YAGURA_ANAGUMA
+  pieces:
+    - K*9i
+    - L*9h
+    - N*8i
+    - S*7g
+    - G*7h
+    - G*6g
+  tesuu_max: 64
+  pieces_readable:
+    - ☗９九玉
+    - ☗９八香
+    - ☗８九桂
+    - ☗７七銀
+    - ☗７八金
+    - ☗６七金
+- id: GOTE_YAGURA_ANAGUMA
+  name:
+    ja_JP: 後手矢倉穴熊
+    en_US: GOTE_YAGURA_ANAGUMA
+  pieces:
+    - k*1a
+    - l*1b
+    - n*2a
+    - s*3c
+    - g*3b
+    - g*4c
+  tesuu_max: 64
+  pieces_readable:
+    - ☖１一玉
+    - ☖１二香
+    - ☖２一桂
+    - ☖３三銀
+    - ☖３二金
+    - ☖４三金
 - id: SENTE_MATSUO_ANAGUMA
   name:
     ja_JP: 先手松尾流穴熊
@@ -2182,63 +2224,81 @@
     - SENTE_NYUUGYOKU
     - GOTE_NYUUGYOKU
   tesuu_max: 1000000000
-- id: SPECIAL_CHUDAN
-  name:
-    ja_JP: 中断
-    en_US: CHUDAN
-  special: CHUDAN
-  tesuu_max: 1000000000
 - id: SPECIAL_TORYO
   name:
     ja_JP: 投了
-    en_US: TORYO
+    en_US: SPECIAL_TORYO
   special: TORYO
   tesuu_max: 1000000000
-- id: SPECIAL_JISHOGI
+- id: SPECIAL_CHUDAN
   name:
-    ja_JP: 持将棋
-    en_US: JISHOGI
-  special: JISHOGI
+    ja_JP: 中断
+    en_US: SPECIAL_CHUDAN
+  special: CHUDAN
   tesuu_max: 1000000000
 - id: SPECIAL_SENNICHITE
   name:
     ja_JP: 千日手
-    en_US: SENNICHITE
+    en_US: SPECIAL_SENNICHITE
   special: SENNICHITE
+  tesuu_max: 1000000000
+- id: SPECIAL_TIME_UP
+  name:
+    ja_JP: 切れ負け
+    en_US: SPECIAL_TIME_UP
+  special: TIME_UP
+  tesuu_max: 1000000000
+- id: SPECIAL_ILLEGAL_MOVE
+  name:
+    ja_JP: 反則手
+    en_US: SPECIAL_ILLEGAL_MOVE
+  special: ILLEGAL_MOVE
+  tesuu_max: 1000000000
+- id: SPECIAL_SENTE_ILLEGAL_ACTION
+  name:
+    ja_JP: 先手反則行為
+    en_US: SPECIAL_SENTE_ILLEGAL_ACTION
+  special: +ILLEGAL_ACTION
+  tesuu_max: 1000000000
+- id: SPECIAL_GOTE_ILLEGAL_ACTION
+  name:
+    ja_JP: 後手反則行為
+    en_US: SPECIAL_GOTE_ILLEGAL_ACTION
+  special: '-ILLEGAL_ACTION'
+  tesuu_max: 1000000000
+- id: SPECIAL_JISHOGI
+  name:
+    ja_JP: 持将棋
+    en_US: SPECIAL_JISHOGI
+  special: JISHOGI
+  tesuu_max: 1000000000
+- id: SPECIAL_KACHI
+  name:
+    ja_JP: 勝ち宣言
+    en_US: SPECIAL_KACHI
+  special: KACHI
+  tesuu_max: 1000000000
+- id: SPECIAL_HIKIWAKE
+  name:
+    ja_JP: 引き分け宣言
+    en_US: SPECIAL_HIKIWAKE
+  special: HIKIWAKE
   tesuu_max: 1000000000
 - id: SPECIAL_TSUMI
   name:
     ja_JP: 詰み
-    en_US: TSUMI
+    en_US: SPECIAL_TSUMI
   special: TSUMI
   tesuu_max: 1000000000
 - id: SPECIAL_FUZUMI
   name:
     ja_JP: 不詰
-    en_US: FUZUMI
+    en_US: SPECIAL_FUZUMI
   special: FUZUMI
   tesuu_max: 1000000000
-- id: SPECIAL_TIME_UP
+- id: SPECIAL_ERROR
   name:
-    ja_JP: 切れ負け
-    en_US: TIME_UP
-  special: TIME_UP
-  tesuu_max: 1000000000
-- id: SPECIAL_ILLEGAL_ACTION
-  name:
-    ja_JP: 反則行為
-    en_US: ILLEGAL_ACTION
-  special: ILLEGAL_ACTION
-  tesuu_max: 1000000000
-- id: SPECIAL_ILLEGAL_MOVE
-  name:
-    ja_JP: 反則手
-    en_US: ILLEGAL_MOVE
-  special: ILLEGAL_MOVE
-  tesuu_max: 1000000000
-- id: SPECIAL_KACHI
-  name:
-    ja_JP: 勝ち宣言
-    en_US: KACHI
-  special: KACHI
+    ja_JP: エラー
+    en_US: SPECIAL_ERROR
+  special: ERROR
   tesuu_max: 1000000000
