@@ -18,11 +18,12 @@ fetch(url)
   throw '';
 })
 .then(kifu => {
-  console.log(jsyaml.dump({
+  console.log(jsyaml.safeDump({
     url,
     kifu,
     tags: getTags(JKFPlayer.parse(kifu)),
   }, {
     noRefs: true,
+    skipInvalid: true,
   }));
 });

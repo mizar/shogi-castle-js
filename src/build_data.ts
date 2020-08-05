@@ -19,5 +19,8 @@ fs.writeFileSync(
 // export data/castle_dist.yaml
 fs.writeFileSync(
   'data/castle_dist.yaml',
-  jsyaml.dump(castle),
+  jsyaml.safeDump(castle, {
+    noRefs: true,
+    skipInvalid: true,
+}),
 );

@@ -246,16 +246,7 @@ export const castle = (jsyaml.safeLoad(fs.readFileSync('data/castle.yaml', 'utf8
     return _m ? `${turn_readable(_m[1])}${sq_readable(_m[2])}${piece_readable(_m[1])}→${turn_readable(_m[1])}${sq_readable(_m[3])}${piece_readable(`${_m[4]}${_m[1]}`)}` : '';
   }),
   capture_readable: e.capture?.map(p => `${turn_readable(p)}${piece_readable(p)}`),
-}))
-.map(e => {
-  const _e = Object.assign({}, e);
-  for (const [key, value] of Object.entries(_e)) {
-    if (value === null || value === undefined) {
-      delete (_e as any)[key];
-    }
-  }
-  return _e;
-});
+}));
 
 export const getTags = (player: JKFPlayer) => player.kifu.moves.reduce<{
   id: string,
@@ -323,11 +314,6 @@ export const getTags = (player: JKFPlayer) => player.kifu.moves.reduce<{
             || undefined,
         },
       );
-      for (const [key, value] of Object.entries(tag)) {
-        if (value === null || value === undefined) {
-          delete (tag as any)[key];
-        }
-      }
       p.push(tag);
     }
   });
