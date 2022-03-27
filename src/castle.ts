@@ -113,7 +113,7 @@ const sq_readable = (sq: string): string => `${
   } as { [ rank: string ]: string })[sq.substring(1, 2)]
 }`;
 
-export const castle = (jsyaml.safeLoad(fs.readFileSync('data/castle.yaml', 'utf8')) as {
+export const castle = (jsyaml.load(fs.readFileSync('data/castle.yaml', 'utf8')) as {
   id: string, // タグ管理名
   name: {
     ja_JP: string, // 日本語名

@@ -35,7 +35,7 @@ fetch('https://golan.sakura.ne.jp/denryusen/dr1_test3/kifulist.txt')
     gameObj,
     { tags: getTags(JKFPlayer.parseCSA(await (await fetch(gameObj.gameUrl)).text())) },
   ))).then(values => {
-    console.log(jsyaml.safeDump(values, {
+    console.log(jsyaml.dump(values, {
       noRefs: true,
       skipInvalid: true,
     }));

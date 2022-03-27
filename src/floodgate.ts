@@ -40,7 +40,7 @@ fetch('https://p.mzr.jp/wdoor-latest/shogi-server.log')
     gameObj,
     { tags: getTags(JKFPlayer.parseCSA(await (await fetch(gameObj.gameUrl)).text())) },
   ))).then(values => {
-    console.log(jsyaml.safeDump(values, {
+    console.log(jsyaml.dump(values, {
       noRefs: true,
       skipInvalid: true,
     }));

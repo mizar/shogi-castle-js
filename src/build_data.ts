@@ -7,7 +7,7 @@ import { castle } from './castle';
 // export data/castle.json
 fs.writeFileSync(
   'data/castle.json',
-  JSON.stringify(jsyaml.safeLoad(fs.readFileSync('data/castle.yaml', 'utf8')), undefined, 2),
+  JSON.stringify(jsyaml.load(fs.readFileSync('data/castle.yaml', 'utf8')), undefined, 2),
 );
 
 // export data/castle_dist.json
@@ -19,7 +19,7 @@ fs.writeFileSync(
 // export data/castle_dist.yaml
 fs.writeFileSync(
   'data/castle_dist.yaml',
-  jsyaml.safeDump(castle, {
+  jsyaml.dump(castle, {
     noRefs: true,
     skipInvalid: true,
 }),

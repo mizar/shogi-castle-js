@@ -18,7 +18,7 @@ fetch(url)
   throw '';
 })
 .then(kifu => {
-  console.log(jsyaml.safeDump({
+  console.log(jsyaml.dump({
     url,
     kifu,
     tags: getTags(JKFPlayer.parse(kifu)),
